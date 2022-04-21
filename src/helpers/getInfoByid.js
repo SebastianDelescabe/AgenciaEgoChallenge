@@ -1,7 +1,8 @@
-import { getInfo } from "./getInfo";
+import axios from "axios"
 
 export const getInfoById = async (id) => {
-    const cars = await getInfo()// eslint-disable-next-line
-    const carById = cars.find(car => car.id == id) //trae como string
+    const car = await axios.get(`https://challenge.agenciaego.tech/api/models/${id}`)
+    const carById = car.data
+    console.log(carById)
     return carById
 }

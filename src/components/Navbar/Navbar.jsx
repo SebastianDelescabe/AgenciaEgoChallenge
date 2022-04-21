@@ -11,7 +11,9 @@ const Navbar = () => {
         <>
             <nav className='navbar'>
                 <div className='navbar__logo'>
-                    <img src={logo} alt="app logo" />
+                    <Link to='/' style={{ textDecoration: 'none' }}>
+                        <img src={logo} alt="app logo" />
+                    </Link>
                 </div>
                 <div>
                     <Link to='/' style={{ textDecoration: 'none' }}>

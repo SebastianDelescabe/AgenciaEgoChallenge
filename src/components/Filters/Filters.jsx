@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { filterCars } from '../../helpers/index';
-import { colapseArrow, dropDownArrow } from '../../assets';
+import { colapseArrow, dropDownArrow } from '../../assets/';
 import './Filters.css'
 
 const Filters = ({ setCars }) => {
