@@ -19,7 +19,7 @@ const CarCard = ({ data }) => {
                 <img className='car__image' src={data.thumbnail} alt="Not Found" />
                 {
                     mouseIn &&
-                    <Link to={`/detalle?id=${data.id}`}>
+                    <Link to={`/detalle/${data.id}`}>
                         <img className='car__buttonDetail' src={buttonDetail} alt="buttonDetail" />
                     </Link>
                 }
