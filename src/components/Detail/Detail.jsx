@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'
-import { getInfoById } from '../../helpers/getInfoByid';
-import { detailInfo } from '../../helpers';
+import { getInfoById, detailInfo } from '../../helpers';
+import { detailfooter1, detailfooter2 } from '../../assets';
 import './Detail.css';
 
 const Detail = () => {
@@ -40,13 +40,19 @@ const Detail = () => {
         }
       </div>
       <div className='detail__data'>
-        <div>
-          <span></span>
-          <img src="" alt="" />
+        <div className='detail__data-one'>
+          <div className='detail__data-containerText'>
+            <span className='detail__data-containerText-title'>Titulo de 20px</span>
+            <span className='detail__data-containerText-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis hic voluptates itaque, velit deserunt enim assumenda culpa libero, quos facere reprehenderit eligendi iste eaque vel delectus corrupti doloremque soluta consequatur!...</span>
+          </div>
+          <img className='detail__data-one-img' src={detailfooter2} alt="not found" />
         </div>
-        <div>
-          <span></span>
-          <img src="" alt="" />
+        <div className='detail__data-two'>
+          <img className='detail__data-two-img' src={detailfooter1} alt="not found" />
+          <div className='detail__data-containerText'>
+            <span className='detail__data-containerText-title'>Titulo de 20px</span>
+            <span className='detail__data-containerText-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis hic voluptates itaque, velit deserunt enim assumenda culpa libero, quos facere reprehenderit eligendi iste eaque vel delectus corrupti doloremque soluta consequatur!...</span>
+          </div>
         </div>
       </div>
     </>

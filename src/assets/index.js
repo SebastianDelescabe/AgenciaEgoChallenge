@@ -12,10 +12,6 @@ import detailImage4 from './png/detail-image4.png'
 import detailfooter1 from './png/detail-footer1.png'
 import detailfooter2 from './png/detail-footer2.png'
 
-
-
-
-
 export {
     logo,
     gray,
