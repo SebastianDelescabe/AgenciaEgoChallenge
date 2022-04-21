@@ -1,0 +1,40 @@
+
+.car__container{
+    padding: 2.5rem;
+    height: 230px;
+}
+
+.car__image {
+    width: 260px;
+    height: 150px;
+    margin: 22px 1px 0 0;
+    object-fit: contain;
+}
+.car__container-body{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.car__title {
+    margin-bottom: 0.5rem;
+    font-size: 28px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: -0.65px;
+    color: #000;
+}
+
+.car__buttonDetail{
+    width: 160px;
+    
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1440px) {
+    .car__container{
+        padding: 2.5rem 1.5rem;
+    }
+}
