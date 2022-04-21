@@ -1,13 +1,12 @@
 
 .car__container{
-    padding: 2.5rem;
-    height: 230px;
+    padding: 2rem;
+    height: 240px;
 }
 
 .car__image {
-    width: 260px;
-    height: 150px;
-    margin: 22px 1px 0 0;
+    width: 280px;
+    height: 180px;
     object-fit: contain;
 }
 .car__container-body{
@@ -29,7 +28,6 @@
 
 .car__buttonDetail{
     width: 160px;
-    
     object-fit: contain;
 }
 

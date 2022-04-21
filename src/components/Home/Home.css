@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 40%;
+    width: 30%;
 }
 
 .order span {
@@ -67,7 +67,7 @@
     flex-direction: column;
     position: absolute;
     margin-top: 20px;
-    left: 77%;
+    left: 79%;
 
     background-color: white;
     text-align: start;
@@ -75,6 +75,7 @@
 }
 
 .order__container span {
+    font-weight: 400;
     cursor: pointer;
     padding: 1rem;
     background-color: white;
@@ -95,6 +96,14 @@
     .home {
         padding: 1rem;
     }
+
+    .order {
+        width: 100%;
+    }
+    .order__container {
+        left: 70%;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -109,11 +118,6 @@
         line-height: 1.26;
         letter-spacing: -0.7px;
     }
-
-    .order {
-        width: 50%;
-    }
-
     .order__container {
         left: 44%;
     }

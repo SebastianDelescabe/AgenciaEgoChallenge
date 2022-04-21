@@ -5,7 +5,6 @@ import './CarCard.css'
 
 const CarCard = ({ data }) => {
     const [mouseIn, setMouseIn] = useState(false)
-    // to={`/detalle?movieID=${data.price}`}
 
     return (
         <div className='car__container'>
@@ -17,14 +16,12 @@ const CarCard = ({ data }) => {
                         <span className="car__title">{data.name}</span>
                 }
                 <span> {data.year} | {data.price.toLocaleString('es-AR', { style: 'currency', currency: 'ARS', minimumFractionDigits: 0 })}</span>
-                <img className='car__image' src={data.photo} alt="Not Found" />
-
+                <img className='car__image' src={data.thumbnail} alt="Not Found" />
                 {
                     mouseIn &&
-                    <Link to='/details'>
+                    <Link to={`/detalle?id=${data.id}`}>
                         <img className='car__buttonDetail' src={buttonDetail} alt="buttonDetail" />
                     </Link>
-
                 }
 
             </div>

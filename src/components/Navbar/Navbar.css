@@ -56,17 +56,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-top: 1rem;
 }
 
 .navbar__button span {
-    width: 41px;
-    height: 18px;
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #191919;
 }
 
@@ -91,14 +85,14 @@
 .navbar__menu-links {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .navbar__menu-links span {
     cursor: pointer;
     width: 350px;
     height: 21px;
-    margin: 0 0 17px;
+    margin: 0 0 17.45px;
     font-size: 20px;
     font-weight: normal;
     font-stretch: normal;

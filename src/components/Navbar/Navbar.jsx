@@ -9,27 +9,25 @@ const Navbar = () => {
 
     return (
         <>
-            {
-                <nav className='navbar'>
-                    <div className='navbar__logo'>
-                        <img src={logo} alt="app logo" />
-                    </div>
-                    <div>
-                        <Link to='/' style={{textDecoration:'none'}}>
-                            <span className='navbar__section-models'>Modelos</span>
-                        </Link>
-                        <span className='navbar__section-detail'>Ficha de modelo</span>
-                    </div>
-                    {
-                        !openMenu && (
-                            <div className='navbar__button'>
-                                <span onClick={() => setOpenMenu(true)}>Menú</span>
-                                <img onClick={() => setOpenMenu(true)} src={gray} alt="" />
-                            </div>
-                        )
-                    }
-                </nav>
-            }
+            <nav className='navbar'>
+                <div className='navbar__logo'>
+                    <img src={logo} alt="app logo" />
+                </div>
+                <div>
+                    <Link to='/' style={{ textDecoration: 'none' }}>
+                        <span className='navbar__section-models'>Modelos</span>
+                    </Link>
+                    <span className='navbar__section-detail'>Ficha de modelo</span>
+                </div>
+                {
+                    !openMenu && (
+                        <div className='navbar__button'>
+                            <span onClick={() => setOpenMenu(true)}>Menú</span>
+                            <img onClick={() => setOpenMenu(true)} src={gray} alt="" />
+                        </div>
+                    )
+                }
+            </nav>
             {
                 openMenu && (
                     <div className='navbar__menu-container'>

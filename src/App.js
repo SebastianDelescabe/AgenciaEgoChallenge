@@ -1,5 +1,5 @@
 import React from 'react'
-import { Home, Navbar } from './components';
+import { Home, Navbar, Detail } from './components';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
+        <Route path='/detalle' element={<Detail />} />
       </Routes>
     </div>
   );

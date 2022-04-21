@@ -3,7 +3,9 @@ import gray from './gray.svg';
 import fill from './fill.svg';
 import colapseArrow from './colapseArrow.svg';
 import dropDownArrow from './dropDowArrow.svg';
-import buttonDetail from './button-detail.svg'
+import buttonDetail from './button-detail.png'
+
+
 
 export {
     logo,
@@ -11,5 +13,5 @@ export {
     fill,
     colapseArrow,
     dropDownArrow,
-    buttonDetail
+    buttonDetail,
 }

@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { getInfo } from '../../helpers/getInfo'
-import { orderCars } from '../../helpers/orderCars';
 import { colapseArrow, dropDownArrow } from '../../assets';
-import CarCard from '../CarCard/CarCard'
-import Filters from '../Filters/Filters'
+import { getInfo, orderCars } from '../../helpers/index'
+import { CarCard, Filters } from '../index'
+
 //import Orders from '../Orders/Orders'
-
-
 import './Home.css'
 
 const Home = () => {
@@ -16,12 +13,12 @@ const Home = () => {
 
   useEffect(() => {
     getInfo()
-    .then((response) => {
-      setCars(response)
-    })
+      .then((response) => {
+        setCars(response)
+      })
   }, [])
-  
-  
+
+
   const handleOrder = async (e) => {
     const order = e.currentTarget.getAttribute('name');
     const orderedCars = await orderCars(order, cars)
