@@ -1,6 +1,6 @@
 Prueba tecnica realizada por Sebastian Delescabe para Agencia EGO
 
-Libreria instalada --> Axios
+Libreria instalada --> Axios animate.css(estilo de animacion al renderizar componente)
 
 Para correr el proyecto ---> Hacer una copia local correr el comando npm Install terminado, npm start para levantarlo.
 

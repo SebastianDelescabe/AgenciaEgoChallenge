@@ -16,8 +16,10 @@ const Home = () => {
       .then((response) => {
         setCars(response)
       })
+      .catch(error => {
+        console.log(error)
+      })
   }, [])
-
 
   const handleOrder = async (e) => {
     const order = e.currentTarget.getAttribute('name');
@@ -26,9 +28,8 @@ const Home = () => {
     setMenuOrder(false)
   }
 
-
   return (
-    <div className='home'>
+    <div className='home animate__animated animate__fadeIn'>
       <div className='home__title'>
         <span>Descubrí todos los modelos</span>
       </div>

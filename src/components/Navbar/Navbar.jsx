@@ -16,10 +16,13 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link to='/' style={{ textDecoration: 'none' }}>
-                        <span className='navbar__section-models'>Modelos</span>
+                    <Link to='/' style={{ textDecoration: 'none' }} >
+                        <span className='navbar__section-models' >Modelos</span>
                     </Link>
-                    <span className='navbar__section-detail'>Ficha de modelo</span>
+                    <Link to='/detalle/1' style={{ textDecoration: 'none' }} >
+                        <span className='navbar__section-detail'>Ficha de modelo</span>
+                    </Link>
+
                 </div>
                 {
                     !openMenu && (

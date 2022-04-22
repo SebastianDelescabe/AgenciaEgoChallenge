@@ -5,9 +5,7 @@ import './Filters.css'
 
 const Filters = ({ setCars }) => {
 
-
   const [filterMenu, setFilterMenu] = useState(false)
-
 
   const handleOnClick = async (e) => {
     const filter = e.currentTarget.innerText;
@@ -44,7 +42,6 @@ const Filters = ({ setCars }) => {
                 <span onClick={(e) => handleOnClick(e)}>Pickups y Comerciales</span>
                 <span onClick={(e) => handleOnClick(e)}>SVUs y Crossovers</span>
               </div>
-
             </div>
           )
         }

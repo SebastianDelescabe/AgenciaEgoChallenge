@@ -23,7 +23,6 @@ const CarCard = ({ data }) => {
                         <img className='car__buttonDetail' src={buttonDetail} alt="buttonDetail" />
                     </Link>
                 }
-
             </div>
         </div>
     )
