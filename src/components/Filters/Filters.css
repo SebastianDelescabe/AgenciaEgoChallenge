@@ -33,9 +33,7 @@
     background-color: #f7f7f7;
 }
 
-
 /* ------Filters Responsive------ */
-
 .filters__responsive {
     display: none;
 }
@@ -54,7 +52,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-
     background-color: white;
     text-align: start;
     box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.15);

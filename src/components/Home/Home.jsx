@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { colapseArrow, dropDownArrow } from '../../assets';
 import { getInfo, orderCars } from '../../helpers/index'
 import { CarCard, Filters } from '../index'
-
-//import Orders from '../Orders/Orders'
 import './Home.css'
 
 const Home = () => {
@@ -35,7 +33,7 @@ const Home = () => {
       </div>
       <div className='home__filterOrder'>
         <Filters setCars={setCars} />
-        {/* <Orders/> */}
+        {/* ----------Orders--------- */}
         <div className='order'>
           <span onClick={() => setMenuOrder(true)}>Ordenar por</span>
           {

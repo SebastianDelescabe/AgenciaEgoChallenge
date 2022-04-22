@@ -10,8 +10,6 @@
     width: 100%;
     font-size: 50px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.14;
     letter-spacing: -1px;
     color: #373737;
@@ -35,8 +33,6 @@
     margin-top: 1rem;
     border: solid 1px rgb(226, 226, 226);
 }
-
-
 
 /* ---------OrderCars---------*/
 
@@ -65,7 +61,6 @@
     flex-direction: column;
     margin-top: 20px;
     left: 79%;
-
     background-color: white;
     text-align: start;
     box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.15);
