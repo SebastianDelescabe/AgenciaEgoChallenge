@@ -34,8 +34,7 @@ const Detail = () => {
             </div>
             <div className='detail__features'>
               {
-                carById.model_highlights && carById.model_features.map(e =>
-                (
+                carById.model_highlights && carById.model_features.map(e => (
                   <div key={e.id} className='detail__features-container'>
                     <img className='detail__features-container-image' src={e.image} alt="not found" />
                     <span className='detail__features-container-title'>{e.name}</span>
