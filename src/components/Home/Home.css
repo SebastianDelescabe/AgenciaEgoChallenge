@@ -1,3 +1,4 @@
+/* ---------Home---------*/
 .home {
     padding: 0rem 15rem;
 }
@@ -37,7 +38,7 @@
 
 
 
-/* //ORDER CARS */
+/* ---------OrderCars---------*/
 
 .order {
     display: flex;
@@ -50,10 +51,6 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: 0.08px;
     color: #373737;
 }
 
@@ -63,9 +60,9 @@
 }
 
 .order__container {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
     margin-top: 20px;
     left: 79%;
 
@@ -75,10 +72,9 @@
 }
 
 .order__container span {
-    font-weight: 400;
     cursor: pointer;
+    font-weight: 400;
     padding: 1rem;
-    background-color: white;
     border-bottom: 1px solid rgba(118, 119, 119, 0.2);
 }
 
@@ -97,6 +93,7 @@
         padding: 1rem;
     }
 
+    /* ---------OrderCars---------*/
     .order {
         width: 100%;
     }
@@ -108,18 +105,14 @@
 }
 
 @media screen and (max-width: 650px) {
-    .home {
-        padding: 0rem 1rem;
-    }
 
     .home__title {
         width: 100%;
-        margin: 43px 0px;
         font-size: 30px;
-        line-height: 1.26;
-        letter-spacing: -0.7px;
+        padding: 1rem 0rem;
     }
 
+    /* ---------OrderCars---------*/
     .order__container {
         left: 44%;
     }

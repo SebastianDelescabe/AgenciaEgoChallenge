@@ -43,9 +43,9 @@ const Detail = () => {
           carById.model_features && carById.model_highlights.map(e => (
             <div key={e.id} className='detail__higligths-data'>
               <img className='detail__higligths-img' src={e.image} alt="not found" />
-              <div className='detail__higligths-containerText'>
-                <span className='detail__higligths-containerText-title'>{e.title}</span>
-                <span className='detail__higligths-containerText-text' dangerouslySetInnerHTML={{ __html: e.content }}></span>
+              <div className='detail__higligths-container'>
+                <span className='detail__higligths-container-title'>{e.title}</span>
+                <span className='detail__higligths-container-text' dangerouslySetInnerHTML={{ __html: e.content }}></span>
               </div>
             </div>
           ))

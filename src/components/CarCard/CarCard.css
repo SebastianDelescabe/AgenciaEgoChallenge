@@ -1,12 +1,13 @@
 
 .car__container{
-    padding: 2rem;
-    height: 240px;
+    padding: 0.5rem 2rem;
+    height: 275px;
+    margin-top: 1rem;
 }
 
 .car__image {
     width: 280px;
-    height: 180px;
+    height: 200px;
     object-fit: contain;
 }
 .car__container-body{
@@ -16,14 +17,10 @@
 }
 
 .car__title {
+
     margin-bottom: 0.5rem;
     font-size: 28px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.07;
-    letter-spacing: -0.65px;
-    color: #000;
 }
 
 .car__buttonDetail{
