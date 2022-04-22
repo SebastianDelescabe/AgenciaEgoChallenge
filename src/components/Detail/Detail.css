@@ -199,6 +199,11 @@
     .detail__features {
         flex-direction: column;
         align-items: center;
+        padding: 1rem;
+    }
+
+    .detail__features-container{
+        margin: 2rem 0rem; 
     }
 
     .detail__features-container-image {
