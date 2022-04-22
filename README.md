@@ -1,6 +1,6 @@
 Prueba tecnica realizada por Sebastian Delescabe para Agencia EGO
 
-Proyecto creado con npx create-react-app
+Proyecto creado con npx create-react-app <br/>
 Librerias usadas --> Axios animate.css(estilo de animacion al renderizar componente)
 
 Para correr el proyecto ---> 1-Hacer una copia local con el comando <b>git clone + direccion del proyecto</b><br/>
