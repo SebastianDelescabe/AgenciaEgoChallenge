@@ -8,4 +8,4 @@ Para inciar el proyecto <br/>1-Hacer una copia local con el comando <b>git clone
                              3-iniciar proyecto con el <b>comando npm start</b> <br/>
 
 
-Tuve un problema de CORS al consumir la API, lo solucione con una extension de Google Chrome llamada Moesif CORS, al estar activada me permitio solucionar el error y traer los datos.
+Si existiera error de cors :*Tuve un problema de CORS al consumir la API, lo solucione con una extension de Google Chrome llamada Moesif CORS, al estar activada me permitio solucionar el error y traer los datos.*
