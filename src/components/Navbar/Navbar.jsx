@@ -1,25 +1,35 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { logo, gray, fill } from '../../assets/index';
+import { CarsContext } from '../../helpers';
 import './Navbar.css';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    const { isActive, setActive } = useContext(CarsContext)
 
     return (
         <>
             <nav className='navbar'>
                 <div className='navbar__logo'>
                     <NavLink to='/' style={{ textDecoration: 'none' }}>
-                        <img src={logo} alt="app logo" />
+                        <img onClick={() => setActive("models")} src={logo} alt="app logo" />
                     </NavLink>
                 </div>
                 <div>
                     <NavLink to='/' style={{ textDecoration: 'none' }} >
-                        <span  className='navbar__section-models' >Modelos</span>
+                        <span
+                            className={` ${isActive === "models" ? 'navbar__section-active ' : 'navbar__section-models'}`}
+                            onClick={() => setActive("models")}
+                        >
+                            Modelos</span>
                     </NavLink>
                     <NavLink to='/detalle/1' style={{ textDecoration: 'none' }} >
-                        <span className='navbar__section-detail'>Ficha de modelo</span>
+                        <span
+                            className={`${isActive === "detail" ? 'navbar__section-active' : 'navbar__section-detail'}`}
+                            onClick={() => setActive("detail")}
+                        >
+                            Ficha de modelo</span>
                     </NavLink>
 
                 </div>

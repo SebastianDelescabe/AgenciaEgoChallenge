@@ -37,10 +37,15 @@
     border-bottom: 4px solid #d0021b;
 } */
 
-.navbar__section-models:hover,
-.navbar__section-detail:hover {
+.navbar__section-active {
+    cursor: pointer;
+    padding: 1.4rem;
+    margin: 0 0 20px 40px;
+    font-size: 14px;
+    font-weight: 600;
+
     color: #eb0a1e;
-    border-bottom: 4px solid #d0021b;
+    border-bottom: 3px solid #d0021b;
 }
 
 .navbar__button {

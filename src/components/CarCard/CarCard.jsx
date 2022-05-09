@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
-import { buttonDetail } from '../../assets'
-import { Link } from 'react-router-dom'
-import './CarCard.css'
+import React, { memo, useContext, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { buttonDetail } from '../../assets';
+import { CarsContext } from '../../helpers';
+import './CarCard.css';
 
-const CarCard = ({ data }) => {
+
+const CarCard = memo(({ data }) => {
     const [mouseIn, setMouseIn] = useState(false)
+
+    const { setActive } = useContext(CarsContext)
 
     return (
         <div className='car__container'>
@@ -19,13 +23,13 @@ const CarCard = ({ data }) => {
                 <img className='car__image' src={data.thumbnail} alt="Not Found" />
                 {
                     mouseIn &&
-                    <Link to={`/detalle/${data.id}`}>
-                        <img className='car__buttonDetail' src={buttonDetail} alt="buttonDetail" />
-                    </Link>
+                    <NavLink to={`/detalle/${data.id}`}>
+                        <img className='car__buttonDetail' src={buttonDetail} alt="buttonDetail" onClick={() => setActive('detail')} />
+                    </NavLink>
                 }
             </div>
         </div>
     )
-}
+})
 
 export default CarCard
