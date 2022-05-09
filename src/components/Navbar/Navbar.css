@@ -29,7 +29,7 @@
     font-size: 14px;
     font-weight: 600;
     padding: 22px;
-    color: black;   
+    color: black;
 }
 
 /* .navbar__section-models:target{
@@ -68,11 +68,15 @@
 /* -----------Open Navbar----------- */
 .navbar__menu-container {
     position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     border: 1px solid black;
     background-color: white;
     z-index: 1;
+    animation: fadeIn 1s;
+    opacity: 1;
+
 }
 
 .navbar__menu-links {

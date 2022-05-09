@@ -29,7 +29,7 @@ const Detail = () => {
               <div className='detail__header-text'>
                 <span>{carById.name}</span>
                 <span className='detail__header-text-title'>{carById.title}</span>
-                <span className='detail__header-text-description' dangerouslySetInnerHTML={{ __html: carById.description }} />
+                <span className='detail__header-text-description' dangerouslySetInnerHTML={{ __html: carById.description }}/>
               </div>
             </div>
             <div className='detail__features'>

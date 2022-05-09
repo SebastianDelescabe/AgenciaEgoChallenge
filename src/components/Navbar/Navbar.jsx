@@ -1,27 +1,26 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { logo, gray, fill } from '../../assets/index'
-import './Navbar.css'
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { logo, gray, fill } from '../../assets/index';
+import './Navbar.css';
 
 const Navbar = () => {
-
-    const [openMenu, setOpenMenu] = useState(false)
+    const [openMenu, setOpenMenu] = useState(false);
 
     return (
         <>
             <nav className='navbar'>
                 <div className='navbar__logo'>
-                    <Link to='/' style={{ textDecoration: 'none' }}>
+                    <NavLink to='/' style={{ textDecoration: 'none' }}>
                         <img src={logo} alt="app logo" />
-                    </Link>
+                    </NavLink>
                 </div>
                 <div>
-                    <Link to='/' style={{ textDecoration: 'none' }} >
-                        <span className='navbar__section-models' >Modelos</span>
-                    </Link>
-                    <Link to='/detalle/1' style={{ textDecoration: 'none' }} >
+                    <NavLink to='/' style={{ textDecoration: 'none' }} >
+                        <span  className='navbar__section-models' >Modelos</span>
+                    </NavLink>
+                    <NavLink to='/detalle/1' style={{ textDecoration: 'none' }} >
                         <span className='navbar__section-detail'>Ficha de modelo</span>
-                    </Link>
+                    </NavLink>
 
                 </div>
                 {
@@ -38,7 +37,7 @@ const Navbar = () => {
                     <div className='navbar__menu-container'>
                         <div className='navbar__button'>
                             <span onClick={() => setOpenMenu(false)}>Cerrar</span>
-                            <img className='navbar__menu-closeButton' onClick={() => setOpenMenu(false)} src={fill} alt="fill" />
+                            <img onClick={() => setOpenMenu(false)} src={fill} alt="fill" />
                         </div>
                         <div className='navbar__menu-links'>
                             <span>Modelos</span>

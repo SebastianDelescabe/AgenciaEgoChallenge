@@ -6,7 +6,7 @@ import 'animate.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
