@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { logo, gray, fill } from '../../assets/index';
+import { gray, fill } from '../../assets/index';
+import logo from '../../assets/png/logo.png'
 import { CarsContext } from '../../helpers';
 import './Navbar.css';
 

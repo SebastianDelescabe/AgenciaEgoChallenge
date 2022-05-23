@@ -24,7 +24,7 @@ const CarCard = memo(({ data }) => {
                 {
                     mouseIn &&
                     <NavLink to={`/detalle/${data.id}`}>
-                        <img className='car__buttonDetail' src={buttonDetail} alt="buttonDetail" onClick={() => setActive('detail')} />
+                        <img className='car__buttonDetail animate__animated animate__fadeIn' src={buttonDetail} alt="buttonDetail" onClick={() => setActive('detail')} />
                     </NavLink>
                 }
             </div>
