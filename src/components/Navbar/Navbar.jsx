@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { gray, fill } from '../../assets/index';
 import logo from '../../assets/png/logo.png'
@@ -6,8 +6,26 @@ import { CarsContext } from '../../helpers';
 import './Navbar.css';
 
 const Navbar = () => {
+
     const [openMenu, setOpenMenu] = useState(false);
     const { isActive, setActive } = useContext(CarsContext)
+
+    const changeWidth = () => {
+        if (window.innerWidth <= 850) {
+            setActive("")
+        } else {
+            setActive("models")
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', changeWidth)
+
+        return () => {
+            window.removeEventListener('resize', changeWidth)
+        }
+    })
+
 
     return (
         <>
