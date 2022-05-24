@@ -18,7 +18,6 @@ const Home = () => {
     setMenuOrder(false)
     setCars(orderedCars)
   }
-  // ----------
 
   return (
     <div className='home animate__animated animate__fadeIn'>
@@ -28,7 +27,6 @@ const Home = () => {
       <div className='home__filterOrder'>
         <Filters />
         {/* // ****Orders**** */}
-
         <div className='order'>
           <span onClick={() => setMenuOrder(!menuOrder)}>Ordenar por</span>
           {
@@ -54,13 +52,16 @@ const Home = () => {
         {/* // ---------- */}
       </div>
       <div className='home__line' />
-      <div className='home__cars'>
-        {
-          cars.map(car => (
-            <CarCard key={car.id} data={car} />
-          ))
-        }
+      <div className='animate__animated animate__fadeIn'>
+        <div className='home__cars'>
+          {
+            cars.map(car => (
+              <CarCard key={car.id} data={car} />
+            ))
+          }
+        </div>
       </div>
+
     </div>
   )
 }

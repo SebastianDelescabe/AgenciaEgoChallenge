@@ -12,7 +12,10 @@ const CarCard = memo(({ data }) => {
 
     return (
         <div className='car__container'>
-            <div onMouseEnter={() => setMouseIn(true)} onMouseLeave={() => setMouseIn(false)} className="car__container-body">
+            <div 
+            onMouseEnter={() => setMouseIn(true)} 
+            onMouseLeave={() => setMouseIn(false)} 
+            className="car__container-body">
                 {
                     mouseIn ?
                         <span className="car__title" style={{ color: '#eb0a1e' }}>{data.name}</span>
@@ -20,11 +23,19 @@ const CarCard = memo(({ data }) => {
                         <span className="car__title">{data.name}</span>
                 }
                 <span> {data.year} | {data.price.toLocaleString('es-AR', { style: 'currency', currency: 'ARS', minimumFractionDigits: 0 })}</span>
-                <img className='car__image' src={data.thumbnail} alt="Not Found" />
+                <img 
+                className='car__image' 
+                src={data.thumbnail} 
+                alt="Not Found" />
                 {
                     mouseIn &&
                     <NavLink to={`/detalle/${data.id}`}>
-                        <img className='car__buttonDetail animate__animated animate__fadeIn' src={buttonDetail} alt="buttonDetail" onClick={() => setActive('detail')} />
+                        <img 
+                        className='car__buttonDetail animate__animated animate__fadeIn' 
+                        src={buttonDetail}
+                        alt="buttonDetail"
+                         onClick={() => setActive('detail')} 
+                         />
                     </NavLink>
                 }
             </div>

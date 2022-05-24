@@ -10,9 +10,10 @@ function App() {
 
   const [cars, setCars] = useState([]);
   const [isActive, setActive] = useState("models");
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    console.log('hola');
+
     getInfo()
       .then((response) => {
         setCars(response)
@@ -28,7 +29,9 @@ function App() {
       cars,
       setCars,
       isActive,
-      setActive
+      setActive,
+      setLoading,
+      loading
     }}>
       <div className='App'>
         <Navbar />
