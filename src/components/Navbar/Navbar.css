@@ -117,6 +117,10 @@
         padding: 0rem;
     }
 
+    .navbar__section-active {
+        display: none;
+    }
+
     .navbar__button span {
         display: none;
     }
