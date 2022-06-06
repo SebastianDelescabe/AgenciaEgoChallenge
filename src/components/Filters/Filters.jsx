@@ -29,7 +29,7 @@ const Filters = () => {
         </div>
       </div>
       <div className='filters__responsive'>
-        <span>Filtrar por</span>
+        <span onClick={() => setFilterMenu(!filterMenu)}>Filtrar por</span>
         {
           !filterMenu ?
             < img onClick={() => setFilterMenu(true)} src={dropDownArrow} alt="" />

@@ -151,8 +151,7 @@
 
     /* -----------higligths-------- */
 
-    .detail__higligths div:nth-child(1),
-    .detail__higligths div:nth-child(3) {
+    .detail__higligths div:nth-child(even) {
         flex-direction: column;
         margin-bottom: 3rem;
     }
@@ -230,8 +229,8 @@
 .lds-ellipsis {
     display: inline-block;
     position: absolute;
-    left:50%;
-    top:50%;
+    left: 50%;
+    top: 50%;
     width: 80px;
     height: 80px;
 }

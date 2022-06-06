@@ -55,6 +55,7 @@
     background-color: white;
     text-align: start;
     box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1;
 }
 
 .filters__responsive-container span {
