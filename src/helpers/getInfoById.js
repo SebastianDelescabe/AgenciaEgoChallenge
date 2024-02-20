@@ -1,7 +1,10 @@
-import axios from "axios"
+import { byId } from '../assets/index'
 
 export const getInfoById = async (id) => {
-    const car = await axios.get(`https://challenge.agenciaego.tech/api/models/${id}`)
-    const carById = car.data
-    return carById
+    let findedCar = byId.filter(carInfo => {
+        if (carInfo.id == id) {
+            return carInfo
+        }
+    })
+    return findedCar
 }

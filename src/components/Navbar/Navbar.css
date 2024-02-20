@@ -1,35 +1,33 @@
 .navbar {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    padding-top: 16px;
-    border-bottom: 1px solid rgb(226, 226, 226);
-    z-index: 1;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  padding-top: 16px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  z-index: 1;
 }
 
 .navbar__logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__logo img {
-    width: 85px;
-    height: 65px;
-    margin: 20px 70px 15px 35px;
-
+  width: 85px;
+  height: 65px;
+  margin: 20px 70px 15px 35px;
 }
-
 
 .navbar__section-models,
 .navbar__section-detail {
-    cursor: pointer;
-    margin: 0 0 20px 40px;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 22px;
-    color: black;
+  cursor: pointer;
+  margin: 0 0 20px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 22px;
+  color: black;
 }
 
 /* .navbar__section-models:target{
@@ -38,104 +36,103 @@
 } */
 
 .navbar__section-active {
-    cursor: pointer;
-    padding: 1.4rem;
-    margin: 0 0 20px 40px;
-    font-size: 14px;
-    font-weight: 600;
+  cursor: pointer;
+  padding: 1.4rem;
+  margin: 0 0 20px 40px;
+  font-size: 14px;
+  font-weight: 600;
 
-    color: #eb0a1e;
-    border-bottom: 3px solid #d0021b;
+  color: #eb0a1e;
+  border-bottom: 3px solid #d0021b;
 }
 
 .navbar__button {
-    flex: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  flex: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .navbar__button span {
-    font-size: 14px;
-    color: #191919;
+  font-size: 14px;
+  color: #191919;
 }
 
 .navbar__button img {
-    cursor: pointer;
-    width: 25px;
-    height: 20px;
-    margin: 25px 30px 25px 15px;
-    object-fit: contain;
+  cursor: pointer;
+  width: 20px;
+  height: 11px;
+  margin: 0.5rem;
+  object-fit: contain;
 }
-
 
 /* -----------Open Navbar----------- */
 .navbar__menu-container {
-    position: absolute;
-    position: fixed;
-    top: 0;
-    right: 0;
-    border: 1px solid black;
-    background-color: white;
-    z-index: 1;
-    animation: fadeIn 1s;
-    opacity: 1;
-
+  position: absolute;
+  position: fixed;
+  top: 45px;
+  right: 0;
+  border: 1px solid black;
+  background-color: white;
+  z-index: 1;
+  animation: fadeIn 1s;
+  opacity: 1;
 }
 
 .navbar__menu-links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
 }
 
 .navbar__menu-links span {
-    cursor: pointer;
-    width: 350px;
-    height: 21px;
-    margin: 0 0 18px;
-    font-size: 20px;
-    text-align: right;
+  cursor: pointer;
+  width: 350px;
+  height: 21px;
+  margin: 0 0 18px;
+  font-size: 20px;
+  text-align: right;
 }
 
 .navbar__menu-path {
-    width: 340px;
-    margin: 31px 31px;
-    border: solid 1px #e9e9e9;
+  width: 340px;
+  margin: 31px 31px;
+  border: solid 1px #e9e9e9;
 }
 
 .navbar__menu-links-copy {
-    display: flex;
-    flex-direction: column;
-    padding: 31px 0;
-    background-color: #efeeef;
+  display: flex;
+  flex-direction: column;
+  padding: 31px 0;
+  background-color: #efeeef;
 }
 
 @media screen and (max-width: 850px) {
+  .navbar__logo img {
+    margin: 0px;
+  }
+  .navbar__button {
+    padding: 0rem;
+  }
 
-    .navbar__button {
-        padding: 0rem;
-    }
+  .navbar__section-active {
+    display: none;
+  }
 
-    .navbar__section-active {
-        display: none;
-    }
+  .navbar__button span {
+    display: none;
+  }
 
-    .navbar__button span {
-        display: none;
-    }
+  .navbar__links {
+    display: none;
+  }
 
-    .navbar__links {
-        display: none;
-    }
+  .navbar__menu-links span {
+    height: 16px;
+  }
 
-    .navbar__menu-links span {
-        height: 16px;
-    }
-
-    .navbar__section-models,
-    .navbar__section-detail {
-        display: none;
-    }
-
+  .navbar__section-models,
+  .navbar__section-detail {
+    display: none;
+  }
 }

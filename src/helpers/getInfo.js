@@ -1,6 +1,6 @@
-import axios from "axios";
+import { models } from '../assets/index'
 
-export const getInfo = async () => {
-    const aPiInfo = await axios.get('https://challenge.agenciaego.tech/api/models/?format=json')
-    return aPiInfo.data
+export const getInfo = () => {
+    console.log(models);
+    return models
 }

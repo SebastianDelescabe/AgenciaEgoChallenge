@@ -1,115 +1,115 @@
 /* ---------Home---------*/
 .home {
-    padding: 0rem 15rem;
+  padding: 0rem 15rem;
 }
 
 .home__title {
-    text-align: start;
-    display: flex;
-    padding-top: 60px;
-    width: 100%;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 1.14;
-    letter-spacing: -1px;
-    color: #373737;
+  text-align: start;
+  display: flex;
+  padding-top: 60px;
+  width: 100%;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: -1px;
+  color: #373737;
 }
 
 .home__cars {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.home.animate__animated.animate__fadeIn {
+  padding-bottom: 1rem;
 }
 
-
 .home__filterOrder {
-    display: flex;
-    margin-top: 2rem;
+  display: flex;
+  margin-top: 2rem;
 }
 
 .home__line {
-    width: 100%;
-    margin-top: 1rem;
-    border: solid 1px rgb(226, 226, 226);
+  width: 100%;
+  margin-top: 1rem;
+  border: solid 1px rgb(226, 226, 226);
 }
 
 /* ---------OrderCars---------*/
 
 .order {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 30%;
-    z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+  z-index: 9999;
 }
 
 .order span {
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    color: #373737;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #373737;
 }
 
 .order img {
-    cursor: pointer;
-    margin-left: 5px;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .order__container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    left: 79%;
-    background-color: white;
-    text-align: start;
-    box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.15);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  left: 79%;
+  background-color: white;
+  text-align: start;
+  box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
 .order__container span {
-    cursor: pointer;
-    font-weight: 400;
-    padding: 1rem;
-    border-bottom: 1px solid rgba(118, 119, 119, 0.2);
+  cursor: pointer;
+  font-weight: 400;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(118, 119, 119, 0.2);
 }
 
 .order__container span:first-child {
-    background-color: rgba(209, 214, 214, 0.2);
+  background-color: rgba(209, 214, 214, 0.2);
 }
 
 @media screen and (max-width: 1440px) {
-    .home {
-        padding: 1rem 5rem;
-    }
+  .home {
+    padding: 1rem 5rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .home {
-        padding: 1rem;
-    }
+  .home {
+    padding: 1rem;
+  }
 
-    /* ---------OrderCars---------*/
-    .order {
-        width: 100%;
-    }
+  /* ---------OrderCars---------*/
+  .order {
+    width: 100%;
+  }
 
-    .order__container {
-        left: 70%;
-    }
-
+  .order__container {
+    left: 70%;
+  }
 }
 
 @media screen and (max-width: 650px) {
+  .home__title {
+    width: 100%;
+    font-size: 30px;
+    padding: 1rem 0rem;
+  }
 
-    .home__title {
-        width: 100%;
-        font-size: 30px;
-        padding: 1rem 0rem;
-    }
-
-    /* ---------OrderCars---------*/
-    .order__container {
-        left: 44%;
-    }
+  /* ---------OrderCars---------*/
+  .order__container {
+    left: 44%;
+  }
 }

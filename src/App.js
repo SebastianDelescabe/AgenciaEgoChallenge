@@ -13,14 +13,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-
-    getInfo()
-      .then((response) => {
-        setCars(response)
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    setCars(getInfo())
   }, [])
 
 

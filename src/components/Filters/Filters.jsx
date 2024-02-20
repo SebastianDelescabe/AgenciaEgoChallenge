@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { filterCars } from '../../helpers/index';
-import { colapseArrow, dropDownArrow } from '../../assets/';
+import { colapseArrow, dropDowArrow } from '../../assets';
 import { CarsContext } from '../../helpers/CarsContext';
 import './Filters.css'
 
@@ -8,11 +8,11 @@ const Filters = () => {
 
   const [filterMenu, setFilterMenu] = useState(false)
 
-  const {cars,setCars} = useContext(CarsContext)
+  const { cars, setCars } = useContext(CarsContext)
 
   const handleOnClick = async (e) => {
     const filter = e.currentTarget.innerText;
-    const filterData = await filterCars(filter,cars)
+    const filterData = await filterCars(filter, cars)
     setCars(filterData)
     setFilterMenu(false)
   }
@@ -32,7 +32,7 @@ const Filters = () => {
         <span onClick={() => setFilterMenu(!filterMenu)}>Filtrar por</span>
         {
           !filterMenu ?
-            < img onClick={() => setFilterMenu(true)} src={dropDownArrow} alt="" />
+            < img onClick={() => setFilterMenu(true)} src={dropDowArrow} alt="" />
             :
             < img onClick={() => setFilterMenu(false)} src={colapseArrow} alt="" />
         }

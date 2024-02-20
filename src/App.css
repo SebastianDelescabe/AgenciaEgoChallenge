@@ -1,9 +1,15 @@
 .App {
   text-align: center;
-  padding:0rem;
+  padding: 0rem;
   margin: 0rem;
 }
 
 .background {
   background-color: #373737;
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 }

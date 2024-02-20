@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { colapseArrow, dropDownArrow } from '../../assets';
+import { colapseArrow, dropDowArrow } from '../../assets';
 import { CarCard, Filters } from '../index'
 import { CarsContext, orderCars } from '../../helpers';
 
@@ -31,7 +31,7 @@ const Home = () => {
           <span onClick={() => setMenuOrder(!menuOrder)}>Ordenar por</span>
           {
             !menuOrder ?
-              <img onClick={() => setMenuOrder(true)} src={dropDownArrow} alt="dropDownArrow" />
+              <img onClick={() => setMenuOrder(true)} src={dropDowArrow} alt="dropDownArrow" />
               :
               <img onClick={() => setMenuOrder(false)} src={colapseArrow} alt="colapseArrow" />
           }
@@ -42,8 +42,8 @@ const Home = () => {
                   <span onClick={handleOrder} name='nothing'>Nada</span>
                   <span onClick={handleOrder} name='cheapCars'>De <b> menor </b> a <b> mayor </b> precio</span>
                   <span onClick={handleOrder} name='expensiveCars'>De <b> mayor </b> a <b> menor </b> precio</span>
-                  <span onClick={handleOrder} name='newCars'>Más <b> nuevos </b> primero</span>
-                  <span onClick={handleOrder} name='oldCards'>Más <b> viejos </b> primero</span>
+                  <span onClick={handleOrder} name='oldCards'>Más <b> nuevos </b> primero</span>
+                  <span onClick={handleOrder} name='newCars'>Más <b> antiguos </b> primero</span>
                 </div>
               </div>
             )

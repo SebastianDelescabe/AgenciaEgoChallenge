@@ -13,12 +13,15 @@ const Detail = () => {
 
   useEffect(() => {
     getInfoById(id)
-      .then((response) => {
-        setCarById(response)
-        setLoading(false)
+      .then(response => {
+        setCarById(response[0])
       })
-  }, [id])
 
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500);
+
+  }, [id])
 
   return (
     <>
@@ -38,9 +41,13 @@ const Detail = () => {
               {
                 carById.model_highlights && carById.model_features.map(e => (
                   <div key={e.id} className='detail__features-container'>
-                    <img loading='lazy' className='detail__features-container-image' src={e.image} alt="not found" />
-                    <span className='detail__features-container-title'>{e.name}</span>
-                    <span className='detail__features-container-text' dangerouslySetInnerHTML={{ __html: e.description }} />
+                    <div className='detail__features-img'>
+                      <img loading='lazy' className='detail__features-container-image' src={e.image} alt="not found" />
+                    </div>
+                    <div className='detail__features-text'>
+                      <span className='detail__features-container-title'>{e.name}</span>
+                      <span className='detail__features-container-text' dangerouslySetInnerHTML={{ __html: e.description }} />
+                    </div>
                   </div>
                 ))
               }
